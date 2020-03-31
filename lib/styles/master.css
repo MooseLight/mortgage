@@ -1,0 +1,50 @@
+:root {
+    --border-radius-size: 10px;
+    --bold-weight: 600;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(248, 248, 248);
+}
+.form-container-input {
+    background-color: white;
+    border-top: 20px;
+    border-top-left-radius: var(--border-radius-size);
+    border-bottom-left-radius: var(--border-radius-size);;
+}
+.form-container-output {
+    color: white;
+    background-color: #ef5350;
+    border-top-right-radius: var(--border-radius-size);;
+    border-bottom-right-radius: var(--border-radius-size);;
+}
+.master-container {
+    background-color:white;
+    color: black;
+    height: 70%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-size);;
+    padding: 0px;
+}
+label {
+    font-weight: var(--bold-weight);
+}
+.btn-primary {
+    background-color: #b61827;
+    border: none;
+    font-weight: var(--bold-weight);
+}
+.btn-primary:hover {
+    background-color: #ef5350;
+}
+
+.navbar-theme {
+    background-color: #b61827;
+    color:white;
+    font-weight: var(--bold-weight);
+}
+a:hover {
+    color: black;
+}
