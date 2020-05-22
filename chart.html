@@ -14,10 +14,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
-        <!-- Include mortgage chart code -->
+        <!-- Include mortgage chart styles and scripts-->
+        <link rel="stylesheet" href="/lib/styles/mortgage-chart.css"/>
         <script src="/lib/scripts/mortgage-chart.js"></script>
     </head>
-    <body onload="RenderMortgageChart()">
+    <body onload="RenderMortgageChart([1,2,3,4,5,6,7,8,9,10], [100,90,80,70,60,50,40,30,20,10], [5,10,15,20,25,30,35,40,45,50])">
         <div class="mortgage-chart-container">
             <canvas id="myChart"></canvas>
         </div>
