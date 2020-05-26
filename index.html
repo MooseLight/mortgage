@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="lib/styles/master.css"/>
     <script src="lib/scripts/main.js"></script>
 
+    <!-- Initial page state -->
+    <script>
+        $(document).ready(function(){
+            hideTableAndGraph();
+        })
+    </script>
     <title>Mortgage Calculator</title>
 </head>
   <body>
@@ -157,18 +163,18 @@
                     <button id="submitBtn" type="button" class="btn btn-submit" onclick="CalculateInterest()">Calculate interest for year 1</button>
                 </div>
         </div>
-        <div class="row table-and-chart-container">
+        <div class="table-and-graph-container row">
             <div class="mortgage-table-container col-md-6">
                 <table class="table table-striped">
                     <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Principal Outstanding</th> <!--[TJ:SUGGEST CHANGE]: Let's remove this-->
-                        <th scope="col">Principal & Interest Payment</th> <!--[TJ:SUGGEST CHANGE]: Let's call it "Payment"-->
-                        <th scope="col">Interest</th>
-                        <th scope="col">Principal</th>
-                        <th scope="col">New Principal Outstanding</th><!--[TJ:SUGGEST CHANGE]: Let's call it "Principal Outstanding"-->
-                    </tr>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Principal Outstanding</th> <!--[TJ:SUGGEST CHANGE]: Let's remove this-->
+                            <th scope="col">Payment</th>
+                            <th scope="col">Interest</th>
+                            <th scope="col">Principal</th>
+                            <th scope="col">New Principal Outstanding</th><!--[TJ:SUGGEST CHANGE]: Let's call it "Principal Outstanding"-->
+                        </tr>
                     </thead>
                     <tbody id="table-body">
                         <!-- Javascript Generated Body -->
