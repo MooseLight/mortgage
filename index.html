@@ -7,14 +7,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Chart.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <!-- Application scripts and styles -->    
     <link rel="stylesheet" href="lib/styles/master.css"/>
     <script src="lib/scripts/main.js"></script>
+
     <title>Mortgage Calculator</title>
 </head>
   <body>
     <nav class="navbar  navbar-theme">
         <a class="navbar-brand navbar-theme" href="/index.html">Mortgage Calculator</a>
-        <a class="navbar-brand navbar-theme" href="/chart.html">Test Chart</a>        
       </nav>
    <div class="row col-md-10 offset-md-1 master-container">
        
@@ -149,24 +157,30 @@
                     <button id="submitBtn" type="button" class="btn btn-submit" onclick="CalculateInterest()">Calculate interest for year 1</button>
                 </div>
         </div>
-        <div>
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Year</th>
-                <th scope="col">Principal Outstanding</th>
-                <th scope="col">Principal & Interest Payment</th>
-                <th scope="col">Interest</th>
-                <th scope="col">Principal</th>
-                <th scope="col">New Principal Outstanding</th>
-              </tr>
-            </thead>
-            <tbody id="table-body">
-             
-            </tbody>
-          </table>
+        <div class="row table-and-chart-container">
+            <div class="mortgage-table-container col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Principal Outstanding</th> <!--[TJ:SUGGEST CHANGE]: Let's remove this-->
+                        <th scope="col">Principal & Interest Payment</th> <!--[TJ:SUGGEST CHANGE]: Let's call it "Payment"-->
+                        <th scope="col">Interest</th>
+                        <th scope="col">Principal</th>
+                        <th scope="col">New Principal Outstanding</th><!--[TJ:SUGGEST CHANGE]: Let's call it "Principal Outstanding"-->
+                    </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Javascript Generated Body -->
+                    </tbody>
+                </table>
+            </div>        
+            <div class="mortgage-chart-container col-md-6">
+                <canvas id="paymentsChart"></canvas>
+            </div>
         </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
