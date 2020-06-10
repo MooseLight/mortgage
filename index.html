@@ -13,7 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
+      
     <!-- Application scripts and styles -->    
     <link rel="stylesheet" href="lib/styles/master.css"/>
     <script src="lib/scripts/main.js"></script>
@@ -164,33 +167,49 @@
                 </div>
         </div>
         <div class="table-and-graph-container row">
-            <div class="mortgage-table-container col-md-6">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Principal Outstanding</th> <!--[TJ:SUGGEST CHANGE]: Let's remove this-->
-                            <th scope="col">Payment</th>
-                            <th scope="col">Interest</th>
-                            <th scope="col">Principal</th>
-                            <th scope="col">New Principal Outstanding</th><!--[TJ:SUGGEST CHANGE]: Let's call it "Principal Outstanding"-->
-                        </tr>
-                    </thead>
-                    <tbody id="table-body">
-                        <!-- Javascript Generated Body -->
-                    </tbody>
-                </table>
-            </div>        
-            <div class="mortgage-chart-container col-md-6">
-                <canvas id="paymentsChart"></canvas>
+           <div class="col">
+            <div>
+                <div class="nav nav-tabs" id="myTab" role="tablist">
+                
+                    <a class="nav-item nav-link active" id="details-tab" data-toggle="tab" href="#Details" role="tab" aria-controls="Details" aria-selected="true">Details</a>
+                  
+                  
+                    <a class="nav-item nav-link" id="graph-tab" data-toggle="tab" href="#Graph" role="tab" aria-controls="Graph" aria-selected="false">Graph</a>
+                 
+                </div>
             </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="Details" role="tabpanel" aria-labelledby="details-tab">
+                    <div class="mortgage-table-container col-md-6">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Year</th>
+                                    <th scope="col">Principal Outstanding</th> <!--[TJ:SUGGEST CHANGE]: Let's remove this-->
+                                    <th scope="col">Payment</th>
+                                    <th scope="col">Interest</th>
+                                    <th scope="col">Principal</th>
+                                    <th scope="col">New Principal Outstanding</th><!--[TJ:SUGGEST CHANGE]: Let's call it "Principal Outstanding"-->
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Javascript Generated Body -->
+                            </tbody>
+                        </table>
+                    </div>   
+                </div>
+                <div class="tab-pane fade" id="Graph" role="tabpanel" aria-labelledby="graph-tab">
+                    <p>something</p>
+                    <div class="mortgage-chart-container col-md-6">
+                        <canvas id="paymentsChart"></canvas>
+                    </div>
+                </div>
         </div>
+            </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      </div>
   </body>
 </html>
