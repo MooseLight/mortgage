@@ -48,6 +48,8 @@ label {
     border: none;
     color: white;
     font-weight: var(--bold-weight);
+    width: 100%;
+    border-radius: 0;
 }
 
 .btn-submit:active {
@@ -96,4 +98,16 @@ a:hover {
 
 .mortgage-chart-container {
     /* width: 90%; */
+}
+
+.input-group>.form-control:not(:last-child){
+    border-radius: 0;
+}
+
+.input-group>.input-group-append>.input-group-text{
+    border-radius: 0;
+}
+
+.custom-select{
+    border-radius: 0;
 }
