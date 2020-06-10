@@ -107,3 +107,11 @@ a:hover {
 .custom-select{
     border-radius: 0;
 }
+
+#details-section{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
