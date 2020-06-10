@@ -96,10 +96,6 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.mortgage-chart-container {
-    /* width: 90%; */
-}
-
 .input-group>.form-control:not(:last-child){
     border-radius: 0;
 }
