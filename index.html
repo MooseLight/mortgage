@@ -20,6 +20,7 @@
     <!-- Application scripts and styles -->    
     <link rel="stylesheet" href="lib/styles/master.css"/>
     <script src="lib/scripts/main.js"></script>
+    <script src="lib/scripts/validation.js"></script>
 
     <!-- Initial page state -->
     <script>
@@ -40,7 +41,7 @@
             <div class="form-group">
                 <label for="mortgageAmount">Mortgage Amount</label>
                 <div class="input-group">
-                    <input type="numeric" class="form-control" id="mortgageAmount" onchange="mortgageAmountValidation(this)">
+                    <input type="numeric" class="form-control" id="mortgageAmount" oninput="mortgageAmountValidation(this)">
                     <div class="input-group-append">
                         <span class="input-group-text">$</span>
                     </div>
@@ -104,7 +105,7 @@
             <div class="form-group">
             <label for="interest-rate">Interest Rate</label>
                 <div class="input-group">
-                    <input type="numeric" class="form-control" id="interestRate" onchange="interestRateValidation(this)">
+                    <input type="numeric" class="form-control" id="interestRate" oninput="interestRateValidation(this)">
                     <div class="input-group-append">
                         <span class="input-group-text">%</span>
                     </div>
