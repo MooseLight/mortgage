@@ -262,17 +262,18 @@ p span{
     padding: 0;
 }
 
-.graph-btn{
-    content: url("../img/svg/Graph_Bar.svg");
+.graph-btn {
+    content: '';
+    background: url("../img/svg/Graph_Bar.svg");
     width: 30px;
     height: 30px;
     padding: 0;
-    background: none;
     border: none;
 }
 
 .graph-btn:hover{
-    content: url("../img/svg/Graph_bar_red.svg");
+    content: '';
+    background: url("../img/svg/Graph_bar_red.svg");
     cursor: pointer;
 }
 
@@ -284,17 +285,18 @@ p span{
     outline: none;
 }
 
-.list-btn{
-    content: url("../img/svg/Table\ View.svg");
+.list-btn {
+    content: '';
+    background: url("../img/svg/Table\ View.svg");
     width: 30px;
     height: 30px;
     padding: 0;
-    background: none;
     border: none;
 }
 
 .list-btn:hover{
-    content: url("../img/svg/Table\ View_Red.svg");
+    content: '';
+    background: url("../img/svg/Table\ View_Red.svg");
     cursor: pointer;
 }
 
