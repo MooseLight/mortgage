@@ -1,14 +1,5 @@
-<ul class="nav nav-fill nav-tabs tab-bar" id="myTab" role="tablist">
-    <li class="nav-item"> 
-        <a class="nav-link tab-item active" id="details-tab" data-toggle="tab" href="#Details" role="tab" aria-controls="Details" aria-selected="true">Details</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="graph-tab" data-toggle="tab" href="#Graph" role="tab" aria-controls="Graph" aria-selected="false">Graph</a>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="Details" role="tabpanel" aria-labelledby="details-tab">
-        <div class=" table table-responsive ">
+<div>
+        <div id="List-view" class="table show table-responsive ">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -25,8 +16,8 @@
                 </tbody>
             </table>
         </div>   
-    </div>
-    <div class="tab-pane fade" id="Graph" role="tabpanel" aria-labelledby="graph-tab">
+    
+    <div id="Graph-view" role="tabpanel">
         <canvas id="paymentsChart"></canvas>
     </div>
 </div>

@@ -89,11 +89,14 @@ a:hover {
 }
 
 .payment-details{
-    font-size: 3rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #b13b3b;
 }
 
 .payment-header{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
 }
 
 .input-group>.form-control:not(:last-child){
@@ -112,6 +115,206 @@ a:hover {
     display: none;
 }
 
+
 .show{
     display: block !important;
+    height: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: 75vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    /* Text styles */
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/hp-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero h1, .hero p{
+     color: white !important;
+    
+}
+
+
+.hero h1{
+  
+    padding-bottom: 1%;
+    font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.hero p{
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+   
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+.hero-inner{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.btn {
+    /* Positioning and sizing */
+    display: inline-block;
+    
+    
+    /* Padding and margins */
+   
+    width:100%;
+
+    margin-top: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    
+    /* Border styles */
+    
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: inline-block;
+    width: auto;
+    
+    /* Padding and margins */
+
+    margin-left: auto;
+    margin-right:auto;
+    /* Text styles */
+    color: black; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    background-color: white;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    margin-bottom: 0;
+  }
+
+ul li::before {
+    content: "\2022";
+    color: #b13b3b;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.payment-section{
+    border-left: 1.5px solid #b13b3b;
+}
+
+.details-row p{
+    border-right: 1.5px solid #b13b3b;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 800;
+}
+
+.details-row p:first-child{
+    border-right: none;
+    padding-left: 0;
+}
+
+.details-row p:last-child{
+    border-right: none;
+}
+
+.details-row{
+    padding: 0 0 0 0 !important;
+}
+
+p span{
+    font-weight: 400;
+}
+
+
+
+.view-group{
+    padding: 0;
+}
+
+.graph-btn{
+    content: url("../img/svg/Graph_Bar.svg");
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.graph-btn:hover{
+    content: url("../img/svg/Graph_bar_red.svg");
+    cursor: pointer;
+}
+
+.list-btn:focus, .graph-btn:focus{
+    outline: none;
+}
+
+:focus{
+    outline: none;
+}
+
+.list-btn{
+    content: url("../img/svg/Table\ View.svg");
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.list-btn:hover{
+    content: url("../img/svg/Table\ View_Red.svg");
+    cursor: pointer;
+}
+
+.rm{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#Graph-view{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#List-view{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
