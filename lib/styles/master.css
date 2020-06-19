@@ -240,7 +240,7 @@ ul li::before {
 }
 
 .details-row p:first-child{
-    border-right: none;
+    
     padding-left: 0;
 }
 
@@ -319,4 +319,25 @@ p span{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+}
+
+.term-details{
+ color: #b13b3b;
+ font-weight: 700;
+ padding-left: 5px;
+}
+
+table > * {
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300))); 
+}
+
+.table td, .table th{
+    padding: 0.3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.col{
+    padding-left: 0;
+    padding-right: 0;
 }
