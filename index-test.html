@@ -132,12 +132,12 @@
                 </div>
                 <div class="col-sm-6 px-5 text-center d-flex justify-content-between align-content-end mb-3">
                     <button type="button" onclick="reset()" class="btn mr-4 btn-b-n" style="background-color: rgb(179, 179, 179);">RESET</button>
-                    <button type="button" onclick="CalculateInterest()" class="btn ml-4 btn-b-n" style="background-color: #b13b3b;">CALCULATE</button>
+                    <button type="button" onclick="CalculateInterest()" class="btn ml-4 btn-b-n calculate-btn">CALCULATE</button>
                 </div>
             </div>
         </form>
-        <div class="row py-5 px-5">
-            <div class="col-sm-8 d-flex align-items-center">
+        <div class="details row py-3 px-5">
+            <div class="col-lg-8 d-flex align-items-center align-content-center">
                 <ul>
                     <li id="principal-end-term" class="mb-3">Principal paid by the end of the term: <span id="principal-paid" class="term-details"></span></li>
                     <li id="interest-end-term" class="mb-3">Interest paid by the end of the term: <span id="interest-paid" class="term-details"></span></li>
@@ -145,13 +145,13 @@
                     <li id="balance-end-term" class="mb-3">Remaining balance by the end of the term: <span id="remaining-principal" class="term-details"></span></li>
                 </ul>
             </div>
-            <div class="col-sm-4 d-flex text-center flex-column align-items-center payment-section">
+            <div class="col-lg-4 d-flex text-center flex-column align-items-center payment-section">
                
                     <div id="payment-header" class="payment-header mt-auto"></div>
                     <div id="payment-details" class="payment-details mb-auto"></div>
                
             </div>
-        <div class="row pt-5 pb-2 container rm">
+        <div class="details row pt-5 pb-2 container rm">
             <div class="col-sm-10 d-flex flex-row details-row text-center">
                 <p>AMOUNT: <span id="details-amount"></span></p>
                 <p>YEARS: <span id="details-years"></span></p>
