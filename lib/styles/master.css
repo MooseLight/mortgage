@@ -377,5 +377,9 @@ table > * {
     .payment-section{
         order: -1;
     }
+
+    .hide-details-sm{
+        display: none;
+    }
 }
 
