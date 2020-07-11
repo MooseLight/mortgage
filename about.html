@@ -17,7 +17,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
@@ -39,24 +39,32 @@
     <title>Mortgage Calculator</title>
 </head>
   <body>
-    <nav class="navbar navbar-theme navbar-expand-sm">
-        <a class="navbar-brand navbar-theme" href="/index.html">Mortgage Calculator</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-              </li>
-              
-            </ul>
-          </div>
-    </nav>
-    <div class="container">
-      <br>
-      <h5><em>Created by a couple of developers passionate about making web tools useful for everyone.</em></h5>
-      <h6><em>Made with love &lt;3</em></h6>
+    <div class="main-container">
+      <nav id="navbar" class="navbar navbar-theme navbar-light navbar-expand-sm">
+          <a id="logo" class="navbar-brand navbar-theme navbar-logo" href="/index.html">
+              <span >Calculators for life</span>
+              <br>
+              <span style="font-size: 0.7rem; padding-left: 2px;">Calculators for everyday life.</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+      </nav>
+      <div class="container main-section">
+        <h1 style="padding-top:50px; font-size: 4.0rem; font-weight: 700; color:#555555; border-bottom: solid 4px #b13b3b;">About us</h1>
+        <p>We started this site in the hopes that the calculators and tools we create can help simplify your life, such as planning for your future or everyday budgeting.</p>
+      </div>
+      <div class="mt-5 footer" style="background-color: #b13b3b;">
+        <div class="container pt-5" style="background-color: #b13b3b;">
+        </div>
     </div>
+</div>
  </body>
 </html>
