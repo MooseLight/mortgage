@@ -25,11 +25,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     
     <!-- Application scripts and styles -->    
-    <link rel="stylesheet" href="lib/styles/master.css"/>
-    <script src="lib/scripts/extensions.js"></script>
-    <script src="lib/scripts/validation.js"></script>
-    <script src="lib/scripts/main.js"></script>
-    <script src="lib/scripts/secondary.js"></script>
+    <link rel="stylesheet" href="/lib/styles/master.css"/>
+    <script src="/lib/scripts/extensions.js"></script>
+    <script src="/lib/scripts/validation.js"></script>
+    <script src="/lib/scripts/main.js"></script>
+    <script src="/lib/scripts/secondary.js"></script>
+    <script src="/lib/scripts/loadHeaderFooter.js"></script>
 
     <style>
         .main-section a {
@@ -41,20 +42,7 @@
 </head>
   <body>
     <div class="main-container">
-      <nav id="navbar" class="navbar navbar-theme navbar-light navbar-expand-sm">
-          <a id="logo" class="navbar-brand navbar-theme navbar-logo" href="/index.html">
-              <span >Calculators for life</span>
-              <br>
-              <span style="font-size: 0.7rem; padding-left: 2px;">Calculators for everyday life.</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/privacy-policy.html">Privacy Policy<span class="sr-only">(current)</span></a>
-          </div>
-      </nav>
+        <div class="header"></div>
       <div class="container main-section">
         <h1 style="padding-top:50px; font-size: 4.0rem; font-weight: 700; color:#555555; border-bottom: solid 4px #b13b3b;">Privacy Policy</h1>
         <!--
@@ -108,9 +96,7 @@
         <br/>
         <p><strong>Last Updated: </strong>July 14th 2020</p>
       </div>
-      <div class="mt-5 footer" style="background-color: #b13b3b;">
-        <div class="container pt-5" style="background-color: #b13b3b;">
-        </div>
+      <div class="footer"></div>
     </div>
 </div>
  </body>

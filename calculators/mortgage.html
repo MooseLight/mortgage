@@ -32,37 +32,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     
     <!-- Application scripts and styles -->    
-    <link rel="stylesheet" href="../lib/styles/master.css"/>
-    <script src="../lib/scripts/extensions.js"></script>
-    <script src="../lib/scripts/validation.js"></script>
-    <script src="../lib/scripts/main.js"></script>
-    <script src="../lib/scripts/secondary.js"></script>
+    <link rel="stylesheet" href="/lib/styles/master.css"/>
+    <script src="/lib/scripts/extensions.js"></script>
+    <script src="/lib/scripts/validation.js"></script>
+    <script src="/lib/scripts/main.js"></script>
+    <script src="/lib/scripts/secondary.js"></script>
+    <script src="/lib/scripts/loadHeaderFooter.js"></script>
 
-    <!-- Initial page state -->
-    <script>
-        // $(document).ready(function(){
-        //     $('#table-and-graph').load('index/table-and-graph.html');
-        // })
-    </script>
     <title>Mortgage Calculator</title>
 </head>
   <body>
     <div class="main-container">
-    <nav id="navbar" class="navbar navbar-theme navbar-light navbar-expand-sm">
-        <a id="logo" class="navbar-brand navbar-theme navbar-logo" href="/index.html">
-            <span >Calculators for life</span>
-            <br>
-            <span style="font-size: 0.7rem; padding-left: 2px;">Calculators for everyday life.</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/privacy-policy.html">Privacy Policy<span class="sr-only">(current)</span></a>
-        </div>
-    </nav>
-    
+        <div class="header"></div>    
     <div class="container main-section">
         <div class="mt-3 py-1 px-3 breadcrumb" style=""><a href="/index.html">home</a> &gt; <a href="/calculators/mortgage.html">mortgage</a></div>
         <div id="calculator"></div>
@@ -226,10 +207,7 @@
         The projected payment is used to give you an idea of what kind of payment you can expect based on the inputed values. The calculator also ignores the property tax.</p>
     </div>
 </div>
-<div class="mt-5 footer" style="background-color: #b13b3b;">
-    <div class="container pt-5" style="background-color: #b13b3b;">
-       
-    </div>
+    <div class="footer"></div>
 </div>
 </div>
  </body>

@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e55789ca43.js" crossorigin="anonymous"></script>
+
     <!-- Chart.js Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
@@ -36,71 +37,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     
     <!-- Application scripts and styles -->    
-    <link rel="stylesheet" href="lib/styles/master.css"/>
-    <script src="lib/scripts/extensions.js"></script>
-    <script src="lib/scripts/validation.js"></script>
-    <script src="lib/scripts/main.js"></script>
-    <script src="lib/scripts/secondary.js"></script>
+    <link rel="stylesheet" href="/lib/styles/master.css"/>
+    <script src="/lib/scripts/extensions.js"></script>
+    <script src="/lib/scripts/validation.js"></script>
+    <script src="/lib/scripts/main.js"></script>
+    <script src="/lib/scripts/secondary.js"></script>
+    <script src="/lib/scripts/loadHeaderFooter.js"></script>
 
-    <!-- Initial page state -->
-    <script>
-        // $(document).ready(function(){
-        //     $('.test-frame').load('/test.html');
-        // })
-    </script>
     <title>Mortgage Calculator</title>
+
 </head>
   <body>
-      <div class="test-frame">
-
-      </div>
     <div class="main-container">
-    <nav id="navbar" class="navbar navbar-theme navbar-light navbar-expand-sm">
-        <a id="logo" class="navbar-brand navbar-theme navbar-logo" href="/index.html">
-            <span >Calculators for life</span>
-            <br>
-            <span style="font-size: 0.7rem; padding-left: 2px;">Calculators for everyday life.</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/privacy-policy.html">Privacy Policy<span class="sr-only">(current)</span></a>
-        </div>
-    </nav>
-    
-    <div class="container main-section">
-        <div class="pt-5">
-            <h2 style="background-color: #b13b3b; color: white; padding: 5px 0px 5px 10px">Finance</h2>
-            <div>
-                <div class="row">
-                    <a class="calc-link m-3 d-flex " style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('lib/img/mortgage.jpg'); position:relative" href="/calculators/mortgage.html">
+        <div class="header"></div>
+        <div class="container main-section">
+            <div class="pt-5">
+                <h2 style="background-color: #b13b3b; color: white; padding: 5px 0px 5px 10px">Finance</h2>
+                <div>
+                    <div class="row">
+                        <a class="calc-link m-3 d-flex " style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('lib/img/mortgage.jpg'); position:relative" href="/calculators/mortgage.html">
+                            <div style="position: absolute; bottom: 10px;">
+                                <span class="" style="font-family: 'Roboto', sans-serif;" >Mortgage</span>
+                            </div>
+                        </a>
+                        <a class="calc-link m-3 d-flex" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('lib/img/car.jpg'); position:relative" href="/calculators/car-loan.html">
                         <div style="position: absolute; bottom: 10px;">
-                            <span class="" style="font-family: 'Roboto', sans-serif;" >Mortgage</span>
-                        </div>
+                                <span class="" style="font-family: 'Roboto', sans-serif;">Car loan</span>
+                        </div> 
+                        </a>
                         
-                    </a>
-                    <a class="calc-link m-3 d-flex" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('lib/img/car.jpg'); position:relative" href="/calculators/car-loan.html">
-                       <div style="position: absolute; bottom: 10px;">
-                            <span class="" style="font-family: 'Roboto', sans-serif;">Car loan</span>
-                       </div> 
-                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 my-5">
+                <h2 style="background-color: #b13b3b; color: white; padding: 5px 0px 5px 10px">More coming soon...</h2>
+                <div class="row">
                     
                 </div>
             </div>
         </div>
-        <div class="py-5 my-5">
-            <h2 style="background-color: #b13b3b; color: white; padding: 5px 0px 5px 10px">More coming soon...</h2>
-            <div class="row">
-                
-            </div>
+            <div class="footer"></div>
         </div>
     </div>
-    <div class="mt-5 footer" style="background-color: #b13b3b;">
-        <div class="container pt-5" style="background-color: #b13b3b;">
-        </div>
-    </div>
-</div>
  </body>
 </html>
