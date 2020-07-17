@@ -1,6 +1,8 @@
 :root {
     --border-radius-size: 10px;
     --bold-weight: 600;
+    --site-red: #b13b3b;
+    --site-white: white;
 }
 
 
@@ -16,19 +18,19 @@ html{
     padding: 0;
 }
 .form-container-input {
-    background-color: white;
+    background-color:  var(--site-white);
     border-top-left-radius: var(--border-radius-size);
     border-bottom-left-radius: var(--border-radius-size);
 }
 
 .form-container-output {
-    color: white;
+    color:  var(--site-white);
     background-color: #ef5350;
     border-top-right-radius: var(--border-radius-size);;
     border-bottom-right-radius: var(--border-radius-size);;
 }
 .master-container {
-    background-color:white;
+    background-color: var(--site-white);
     color: black;
     height: 80%;
     margin-top: 2%;
@@ -54,7 +56,7 @@ label {
 .btn-submit{
     background-color: #ef5350;
     border: none;
-    color: white;
+    color:  var(--site-white);
     font-weight: var(--bold-weight);
     width: 100%;
     border-radius: 0;
@@ -62,21 +64,21 @@ label {
 
 .btn-submit:active {
     background-color: #b61827;
-    color: white;
+    color:  var(--site-white);
 }
 
 .btn-submit:focus {
     background-color: #b61827 !important;
-    color: white;
+    color:  var(--site-white);
 }
 
 .btn-submit:hover {
     background-color: #ef5350;
-    color: white;
+    color:  var(--site-white);
 }
 
 .navbar-theme {
-    background-color: white;
+    background-color:  var(--site-white);
     color:#b61827;
     font-weight: var(--bold-weight);
 }
@@ -160,7 +162,7 @@ a:hover {
 }
 
 .hero h1, .hero p{
-     color: white !important;
+     color:  var(--site-white) !important;
     
 }
 
@@ -196,14 +198,14 @@ a:hover {
     margin-top: auto;
     
     /* Text styles */
-    color: white; /* CHANGE THIS LINE */
+    color:  var(--site-white); /* CHANGE THIS LINE */
     text-decoration: none;
     font-size: 0.8em;
     font-weight: bold;
     
     /* Border styles */
     
-    background-color: white;
+    background-color:  var(--site-white);
     border-radius: 5px;
 }
 
@@ -223,8 +225,8 @@ a:hover {
     font-weight: bold;
     
     /* Border styles */
-    border: 3px solid white; /* CHANGE THIS LINE */
-    background-color: white;
+    border: 3px solid  var(--site-white); /* CHANGE THIS LINE */
+    background-color:  var(--site-white);
     border-radius: 5px;
 }
 
@@ -236,7 +238,7 @@ ul {
 
 ul li::before {
     content: "\2022";
-    color: #b13b3b;
+    color: var(--site-red)
     font-weight: bold;
     display: inline-block; 
     width: 1em;
@@ -248,18 +250,18 @@ ul li::before {
   }
 
   .nav-link{
-      color: #b61827 !important;
+      color: var(--site-red) !important;
   }
 
 .payment-section{
-    border-left: 1.5px solid #b13b3b;
-    background-color: #b13b3b;
-    color: white;
+    border-left: 1.5px solid  var(--site-red);
+    background-color:  var(--site-red);
+    color:  var(--site-white);
     padding: 40px 0 40px 0;
 }
 
 .details-row p{
-    border-right: 1.5px solid #b13b3b;
+    border-right: 1.5px solid  var(--site-red);
     padding-left: 10px;
     padding-right: 10px;
     margin-top: auto;
@@ -350,7 +352,7 @@ p span{
 }
 
 .term-details{
- color: #b13b3b;
+ color:  var(--site-red);
  font-weight: 700;
  padding-left: 5px;
 }
@@ -387,11 +389,11 @@ table > * {
 }
 
 .btn:hover{
-    color: white !important;
+    color:  var(--site-white) !important;
 }
 
 .calculate-btn{
-    background-color: #b13b3b;
+    background-color:  var(--site-red);
 }
 
 .calculate-btn:hover{
@@ -414,7 +416,7 @@ table > * {
 }
 
 a.calc-link{
-    color: white;
+    color:  var(--site-white);
     font-size: 1.7rem;
     font-weight: 700; 
     background-position: center;
@@ -426,7 +428,7 @@ a.calc-link{
     height: 250px;
 }
 a.calc-link:hover{
-    color: white;
+    color:  var(--site-white);
     text-decoration: none;
    
     transform: scale(1.04);
@@ -440,7 +442,7 @@ a.calc-link:hover{
 
 .navbar-logo{
     font-size: 1.7rem; 
-    border-left: solid 5px #b13b3b; 
+    border-left: solid 5px  var(--site-red); 
     margin-left: 150px; 
     padding:10px; 
     margin-top:10px; 
@@ -454,8 +456,8 @@ a.calc-link:hover{
 
 .navbar-logo:hover{
     transform: scale(1.03); 
-    border-left: solid 5px #b13b3b; 
-    color: #b13b3b !important;
+    border-left: solid 5px  var(--site-red); 
+    color:  var(--site-red) !important;
     font-weight: 700;
 }
 
@@ -475,7 +477,7 @@ a.calc-link:hover{
     position: absolute;
     bottom:0;
     width: 100%;
-    background-color: #b13b3b;
+    background-color:  var(--site-red);
 }
 
 a {
@@ -483,21 +485,26 @@ a {
 }
 
 a:hover{
-    color: #b13b3b;
+    color:  var(--site-red);
 }
 
 .breadcrumb{
-    background-color: #b13b3b; 
+    background-color:  var(--site-red); 
     display: inline-block; 
     border-radius: 50px; 
-    color:white
+    color: var(--site-white);
+    margin-top: 3rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .breadcrumb > a {
-    color: white;
+    color:  var(--site-white);
 }
 .breadcrumb > a:hover{
-    color: white;
+    color:  var(--site-white);
     font-weight: bold;
     text-decoration: none;
 }
