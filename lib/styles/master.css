@@ -7,16 +7,12 @@
 
 
 body {
-   
-    overflow-x: hidden;
+    
     background-color: rgb(248, 248, 248);
     font-family: 'Quicksand', sans-serif !important;
 }
 
-html{
-    margin: 0;
-    padding: 0;
-}
+
 .form-container-input {
     background-color:  var(--site-white);
     border-top-left-radius: var(--border-radius-size);
@@ -134,11 +130,17 @@ a:hover {
 }
 
 
-.show{
+.show-details{
     display: block !important;
     height: 100% !important;
     opacity: 1 !important;
     visibility: visible !important;
+}
+
+.tooltip-inner{
+    padding: 20px !important;
+    background-color: rgb(36, 36, 36);
+    text-align: left;
 }
 
 .hero {
@@ -252,6 +254,10 @@ ul li::before {
   .nav-link{
       color: var(--site-red) !important;
   }
+
+  .nav-link:hover{
+    color: #e44d4d !important;
+}
 
 .payment-section{
     border-left: 1.5px solid  var(--site-red);
@@ -469,15 +475,24 @@ a.calc-link:hover{
 .main-container {
     min-height: 100vh;
     position: relative;
-    padding-bottom: 200px;
 }
 
 .footer{
-    height: 200px;
-    position: absolute;
+    height: auto;
+    padding: 20px 0 20px 0;
+    margin-top: 50px;
     bottom:0;
     width: 100%;
     background-color:  var(--site-red);
+}
+
+.footer .nav-link{
+    color: white!important;
+}
+
+.footer .nav-link:hover{
+    color: white!important;
+    font-weight: 600;
 }
 
 a {
@@ -491,7 +506,7 @@ a:hover{
 .breadcrumb{
     background-color:  var(--site-red); 
     display: inline-block; 
-    border-radius: 50px; 
+    border-radius: 100px; 
     color: var(--site-white);
     margin-top: 3rem;
     padding-top: 0.25rem;
@@ -507,4 +522,15 @@ a:hover{
     color:  var(--site-white);
     font-weight: bold;
     text-decoration: none;
+}
+
+.contact-info{
+    color: black;
+    font-family: 'Quicksand', sans-serif !important;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.wrapper{
+    position: relative;
 }
