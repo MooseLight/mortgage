@@ -7,48 +7,41 @@
         <lastmode>last modified date</lastmode>
         <changefreq>How often do we expect to update this sitemap</changefreq>
         <priority>Relative importance of page to other pages in the site</priority>
-        <display>Custom element used as the display name for the url on the sitemap.html page</display>
     -->
    <url>
       <loc>http://www.calculatorsforlife.com</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-      <display></display>
    </url>
    <url>
       <loc>http://www.calculatorsforlife.com/about.html</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
-      <display>about</display>
    </url>
    <url>
       <loc>http://www.calculatorsforlife.com/calculators/car-loan.html</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-      <display>calculators/car-loan</display>
    </url>
    <url>
       <loc>http://www.calculatorsforlife.com/calculators/mortgage.html</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-      <display>calculators/mortgage</display>
    </url>
    <url>
       <loc>http://www.calculatorsforlife.com/contact-us.html</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
-      <display>contact-us</display>
    </url>
    <url>
       <loc>http://www.calculatorsforlife.com/privacy-policy.html</loc>
       <lastmod>2020-07-20</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.5</priority>
-      <display>privacy-policy</display>
    </url>
 </urlset> 
